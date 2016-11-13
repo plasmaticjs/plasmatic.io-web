@@ -85,6 +85,8 @@ algolia:
   indexName: 'search_index'
   chunkSize: 5000
 
+googles:
+  analyticsID: 'UA-87276089-1'
 ignore:
   - "./travis_scripts/**"
 
