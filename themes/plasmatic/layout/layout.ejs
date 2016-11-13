@@ -1,0 +1,17 @@
+<%- partial('_partial/head') %>
+
+
+<body>
+  <%- partial('_partial/blocks/search_layout') %>
+  <div class="flex">
+    <%- partial('_partial/blocks/top_header') %>
+    <%- body %>
+  </div>
+</body>
+<script>
+  $(document).ready(function(){
+    window.setTimeout(function() {
+      hljs.initHighlighting();
+    },1);
+  });
+</script>

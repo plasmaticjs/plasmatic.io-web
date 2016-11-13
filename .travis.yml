@@ -1,0 +1,14 @@
+language: node_js
+before_install:
+- node --version
+- npm --version
+- npm install --global yarn
+node_js:
+- '6'
+install:
+- yarn install
+script: "./travis_scripts/build.sh"
+env:
+  global:
+    - GITHUB_REPO: plasmaticjs/plasmatic.io-web
+    - secure: r9csKUK6Vri0HAiZwMKLHJHLfPrVuOXgN+jbUN0ZAT6ZRaiDY9OInufIeITgd/eQO0hzp+KfYebkMDNasE/0iEkP1vIQ7ShtSyrmxFYEJDquUasjYyTZB5BjwZB9D8pChfZnqwhqGp9IfqV5KBB/W4PyHgELOTmsME9YVWhqNfm02CZ3bS8JZlw79vBvB1UOjccxSMeBVEYQByPrL90j6nnrmbWDB3Up1kIwuZo7WsjhdsZ1UVlpysQBnxbojuW1hFc7LsJ/zIX2KyGf4O0BvpoFwg+HPOab5LkpV0dLUmZ71Xnf44Pfw1jAtHJf4Xm23+TxHvn3SOisJmFJxvc5Zog4AqeqeYebwBEJS9ywNfAOZt/3mtqGz9eX5pXG4Cj1aBpN7s0/8C9hXM1WpUKISsk/iSACEZ22bkb/Z+bRFQHUzc9qMkrb8EwTzYTHI5EmHI5TaJvFfPa9LfuxK7O/XG9+C+E6+F0Bsx21zvuIgGxDvJVeu244SQSXxZptlKDuimriYjv1+GkbQvEvx1FIuWmw/63F7iA8jPSzT2NWDhfN9bGXpIyGoADLcopYd7iJmQfMjqYsOh/dd9MFnHm8nI0Sj6cO7dZnPgi+D/G5jO0DSjLBW50H2VBITUr/93YoDhJIhPrF52WnPFRzRSdPO2A90MQSu1sJ/infwjXQg/g=

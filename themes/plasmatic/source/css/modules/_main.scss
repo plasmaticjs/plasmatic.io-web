@@ -1,0 +1,61 @@
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+html {
+  font-size: 62.5%; /* Sets up the Base 10 stuff */
+}
+
+body {
+  background-color: $base-body-color;
+  font-family: $font-lato;
+  font-weight: 300;
+  @include font-size(16);
+  color: #111;
+
+  .wrapper {
+    display: flex;
+    flex: 0 0 960px;
+  }
+}
+
+a {
+  transition: color 350ms ease-out;
+  text-decoration: none;
+  color: #111;
+  cursor: pointer;
+
+  &:hover {
+    color: $colors-pink;
+  }
+}
+
+input {
+  &:focus {
+    outline: none;
+  }
+}
+
+
+.button {
+  @include button($colors-pink);
+  &.blue {
+    @include button($colors-blue);
+  }
+}
+
+.flex {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@import "blocks/page";
+@import "blocks/highlight";
+@import "blocks/top_header";
+@import "blocks/search_layout";
+@import "blocks/main_hero";

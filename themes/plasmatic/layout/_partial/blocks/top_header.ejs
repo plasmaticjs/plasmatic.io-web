@@ -1,0 +1,29 @@
+<%
+var activePath = path;
+
+function namespaceActive(path) {
+  return activePath.indexOf(path) > -1
+}
+%>
+<div class="top_header">
+  <div class="wrapper">
+    <div class="top_header-logo">
+      <div>
+        <a href="/">Plasmatic</a>
+      </div>
+    </div>
+    <nav class="top_header-nav">
+      <ul>
+          <li> <a class="<%= namespaceActive('docs') ? 'active' : ''%>" href="<%= url_for('docs') %>"><i class="fa fa-book"></i> Docs  </a></li>
+          <li> <a class="<%= namespaceActive('tutorial') ? 'active' : ''%>" href="<%= url_for('tutorial') %>"><i class="fa fa-flask"></i> Tutorial  </a></li>
+      </ul>
+    </nav>
+    <div class="top_header-search">
+      <div >
+        <a class="js-search_box">
+          <i class="fa fa-search icon "></i> Search docs
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

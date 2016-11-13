@@ -1,0 +1,21 @@
+<div class="navigation">
+  <% if (site.data[namespace] !== null) { %>
+    <% for(var i=0; i< site.data[namespace].length; i++) { %>
+    <% var item = site.data[namespace][i] %>
+    <div class="navigation-section">
+      <h3><%= item.title %></h3>
+      <ul>
+      <% if (item.items !== null) { %>
+        <% for(var x=0; x< item.items.length; x++) { %>
+          <% var subItem = item.items[x] %>
+          <li>
+            <% var _path = url_for(namespace + '/' + subItem.link + '.html') %>
+            <a href="<%= _path %>" class="<%= url_for(path) == _path ? 'active' : '' %>"><%= subItem.title %></a>
+          </li>
+        <% } %>
+      <% } %>
+      </ul>
+    </div>
+    <% } %>
+  <% } %>
+</div>

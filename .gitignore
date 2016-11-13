@@ -1,0 +1,8 @@
+# IDEA
+.idea
+*.iml
+
+# Node Module
+node_modules
+public
+db.json
