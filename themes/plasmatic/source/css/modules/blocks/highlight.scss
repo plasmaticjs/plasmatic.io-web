@@ -11,15 +11,7 @@
   display: block;
   overflow-x: auto;
 }
-//.hljs, code, kbd, samp {
-//  background-color: transparent;
-//  border: 1px solid #dedddd;
-//  border-radius: 3px;
-//  @include font-size(13);
-//  padding: 10px 20px;
-//  font-family: $font-source;
-//  font-weight: 300;
-//}
+
 .hljs {
   transition: opacity 350ms ease-out;
   opacity: 1;
