@@ -9,6 +9,7 @@ code, kbd, samp {
   font-family: $font-source;
   font-weight: 300;
   display: block;
+  overflow-x: auto;
 }
 .hljs, code, kbd, samp {
   background-color: transparent;
